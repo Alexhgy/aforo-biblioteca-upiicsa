@@ -57,6 +57,8 @@ function registrarEntrada() {
 function registrarSalida() {
   if (ocupados > 0) {
     ocupados--;
+    inputBoleta.value = "";
+    inputNombre.value = "";
     actualizarAforo();
   }
 }
