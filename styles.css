@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("img/UNIVERSIDAD.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  width: 100%;
+}
+
+header {
+  background: #004d1f;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 40px;
+}
+
+header h1 {
+  letter-spacing: 3px;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+}
+
+header .logo .ipn {
+  background: #fff;
+  height: auto;
+}
+
+.panel {
+  width: 70%;
+  margin: 40px auto;
+
+  background: rgba(118, 171, 106, 0.8);
+
+  padding: 40px;
+  text-align: center;
+
+  border-radius: 10px;
+}
+
+.panel h1 {
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.panel h3 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.campo label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.campo input {
+  width: 220px;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.entrada,
+.salida {
+  width: 180px;
+  padding: 15px;
+
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.entrada {
+  background: #00d92f;
+}
+
+.salida {
+  background: #a70000;
+}
+
+.entrada:hover {
+  transform: scale(1.05);
+}
+
+.salida:hover {
+  transform: scale(1.05);
+}
+
+.aforo {
+  background: rgba(0, 90, 40, 0.75);
+  color: white;
+
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.aforo h2 {
+  margin-bottom: 20px;
+}
+
+.estadisticas {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.estadisticas strong {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.barra {
+  width: 100%;
+  height: 20px;
+
+  background: #00ff55;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progreso {
+  height: 100%;
+  width: 0%;
+
+  background: #b00000;
+
+  transition: 0.5s;
+}
+
+.creditos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #004d1f;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  vertical-align: top;
+}
+
+.integrantes li {
+  list-style: none;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  header .ipn {
+    height: auto;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .formulario {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .botones {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .estadisticas {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .creditos {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

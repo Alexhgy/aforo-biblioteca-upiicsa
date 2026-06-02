@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control de Aforo Biblioteca UPIICSA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <div class="logo">
+          <img src="img/UPIICSA_LOGO.jpg" alt="Logo de la UPIICSA" />
+        </div>
+
+        <div class="titulo-header">
+          <h1>BIBLIOTECA</h1>
+        </div>
+
+        <div class="logo ipn">
+          <img src="img/IPN_LOGO.png" alt="Logo del IPN" />
+        </div>
+      </header>
+
+      <main class="panel">
+        <h1>ACCESO A LA BIBLIOTECA</h1>
+        <h3>REGISTRO DE CONTROL DE AFORO PARA ENTRADA Y SALIDA</h3>
+
+        <form id="formulario">
+          <div class="formulario">
+            <div class="campo">
+              <label for="boleta">N° DE BOLETA</label>
+              <input
+                minlength="10"
+                maxlength="10"
+                required
+                type="text"
+                id="boleta"
+                placeholder="Ingrese boleta"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="nombre">NOMBRE (OPCIONAL)</label>
+              <input type="text" id="nombre" placeholder="Ingrese nombre" />
+            </div>
+          </div>
+
+          <div class="botones">
+            <button type="submit" id="entrada" class="entrada">ENTRADA</button>
+
+            <button type="submit" id="salida" class="salida">SALIDA</button>
+          </div>
+        </form>
+
+        <section class="aforo">
+          <h2>ESTADO DE OCUPACIÓN ACTUAL</h2>
+
+          <div class="estadisticas">
+            <div>
+              <span>LUGARES DISPONIBLES:</span>
+              <strong id="disponibles">50</strong>
+            </div>
+
+            <div>
+              <span>LUGARES OCUPADOS:</span>
+              <strong id="ocupados">0</strong>
+            </div>
+          </div>
+
+          <div class="barra">
+            <div class="progreso" id="barraProgreso"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="creditos">
+      <div class="logo"><img src="img/Capa8.jpeg" alt="Logo de Capa 8" /></div>
+
+      <div class="integrantes">
+        <p>Equipo Capa 8. Integrantes:</p>
+        <ul>
+          <li>García Nequiz Alberto</li>
+          <li>Higuerey Tineo Alejandro</li>
+          <li>López Silva Emiliano</li>
+          <li>Ramirez Enriquez Ashanti Abigail</li>
+          <li>Solorio Cárdenas Héctor Antonio</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
