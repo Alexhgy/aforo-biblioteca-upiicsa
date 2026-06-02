@@ -26,7 +26,7 @@ entrada.addEventListener("click", (e) => {
 salida.addEventListener("click", (e) => {
   e.preventDefault();
   if (formulario.checkValidity()) {
-    registrarEntrada();
+    registrarSalida();
   } else {
     formulario.reportValidity();
   }
